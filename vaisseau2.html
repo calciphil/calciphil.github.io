@@ -1,0 +1,518 @@
+<html>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+        body{
+           
+            background-image: url("shipo.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        #reseau:hover{
+            filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+        }
+        html{
+            font-family: 'Noto Sans', sans-serif;
+            font-variant: small-caps;
+        }
+        h1{
+        text-align: center;
+        width: 1000px;
+        margin-right: auto;
+        margin-top: 60px;
+        margin-bottom: 70px;
+        margin-left: auto;
+        font-variant: small-caps;
+        text-shadow: 4px 3px whitesmoke;
+        font-size: 50px;
+        width: 70%;
+        color: black;
+        }
+
+        h2{
+        text-align: center;
+        width: 1000px;
+        margin-right: auto;
+        margin-top: 60px;
+        margin-bottom: 70px;
+        margin-left: auto;
+        font-variant: small-caps;
+        text-shadow: 3px 3px whitesmoke;
+        font-size: 40px;
+        width: 70%;
+        color: black;
+        }
+
+        .nava{
+            color: white;
+            background-color: rgb(58, 48, 145);
+            opacity: 0.8;
+            text-align: center;
+            padding: 5px;
+         
+        }
+        .nava a{
+            font-size: large;
+            text-align: center;
+            display: flex;
+            display: inline;
+            padding-left: 10px ;
+            text-decoration: none;
+            color: white;
+        
+        }
+        .nava a:hover{
+            color: tomato;
+        }
+        #navb a:hover{
+            color: tomato;
+        }
+        #navb{
+            color: white;
+            background-color: rgb(58, 48, 145);
+            opacity: 0.8;
+            text-align: center;
+            padding: 5px;
+            bottom: 0px;
+            left: 10px;
+            right: 10px;
+         
+        }
+        #navb a{
+            text-align: center;
+            display: flex;
+            display: inline;
+            padding-left: 50px ;
+            text-decoration: none;
+            color: white;
+            font-size: large;
+        }
+        
+        .pic img{
+            float:left;
+            margin-left: 50px; 
+            transition-duration: 1s;
+            transition-delay: 0,3s;
+        }
+        .pic img:hover {
+            transform: rotate(45deg);
+        }
+        header{
+            padding: 10px;
+        }
+        
+        #vaiss{
+            color: rgb(243, 94, 35);
+            
+        }
+        main {
+            max-width: 1300px;
+            width:100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            justify-content: center;
+            text-align: center;
+        }
+        .spac{
+            background-color: rgba(253, 251, 251, 0.678);
+            margin: 0px 20px 20px 0px;
+            width:300px;
+            height: 650px;
+            padding: 10px;
+            color: rgb(56, 56, 56);
+            box-shadow: 4px 3px rgb(27, 27, 27);
+        }
+        .spac img {
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+         /* Style the Image Used to Trigger the Modal */
+        #myImg, #myImg2, #myImg3, #myImg4, #myImg5 {
+            width: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 2px 3px 2px rgba(41, 41, 41, 0.719);
+        }
+
+        #myImg:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover{
+            opacity: 0.8;
+        }
+
+        /* The Modal (background) */
+        .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 50px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+ 
+        background-color: rgba(0, 0, 0, 0.473); /* Black w/ opacity */
+        margin-bottom: 500px;
+        }
+
+        /* Modal Content (Image) */
+        .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 500px;
+        padding: 20px;
+        }
+
+        /* Caption of Modal Image (Image Text) - Same Width as the Image */
+        #caption, #caption2, #caption3, #caption4, #caption5 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: justify;
+        color: #ccc;
+        padding: 10px ;
+        height: 150px;
+        padding-bottom: 200px;
+        font-size: large;
+        background-color: rgba(0, 0, 0, 0.575);
+        }
+
+        /* Add Animation - Zoom in the Modal */
+        .modal-content, #caption, #caption2, #caption3, #caption4, #caption5 {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {
+                transform:scale(0)
+            }
+            to {
+                transform:scale(1)
+            }
+        }
+
+        /* The CloseS Buttons */
+        .close, .close2, .close3, .close4, .close5 {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: whitesmoke;
+            font-size: 30px;
+            transition: 0.3s;
+        }
+
+        .close:hover, .close2:hover, .close3:hover, .close4:hover, .close5:hover, .close:focus, .close2:focus, .close3:focus, .close4:focus, .close5:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .plan{
+            width: 100%;
+            
+            
+        }
+        #spaceshipemenu{
+            display: inline-flex;
+            
+            width: 100%;
+        }
+        #left{
+            position: relative;
+            margin: auto;
+            width: 25%;
+            height: 100%;
+        }
+        #middle{
+            width: 23%;
+            margin: auto;
+        }
+        #right{
+            width: 25%;
+            margin: auto;
+            height: 100%;
+        }
+        #tdleft{
+            height: 300px;
+            text-align: right;
+        }
+        #tdright{
+            height: 300px;
+            text-align: left;
+        }
+        table{
+            height: 100%;
+        }
+        #h3left{
+            width: 1000px;
+            margin-top: 60px;
+            margin-left: auto;
+            font-variant: small-caps;
+            text-shadow: 2px 1px whitesmoke;
+            font-size: large;
+            width: 70%;
+            color: black;
+        }
+        #h3right{
+            width: 1000px;
+            margin-right: auto;
+            margin-top: 60px;
+            font-variant: small-caps;
+            text-shadow: 2px 1px whitesmoke;
+            font-size: large;
+            width: 70%;
+            color: black;
+        }
+
+        .pva{
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.596);
+            width: 1000px;
+            padding: 10px;
+            margin: auto;
+            margin-bottom: 40px;
+            font-variant: small-caps;
+            text-shadow: 2px 1px black;
+            font-size: large;
+            width: 70%;
+            color: whitesmoke;
+        }
+
+        </style>
+        
+        <head>
+            <title>Le vaisseau</title>
+        
+            <link rel="shortcut icon" href="planet.ico" />
+        </head>
+        <body >
+            <header>
+                <div class="pic">
+                    <a href="project.html"><img src="plane.png"  height="200px" width="200px"></a>                     
+               </div>
+                
+                    <h1>L'incroyable Aventure Gorosa</h1>  
+        
+            </header>
+            
+            <nav class="nava">
+                    <a href="project.html">Accueil</a>
+                    <a href="whyjoinus.html">Pourquoi nous accompagner ?</a>
+                    <a href="maxgalax.html">Nouvelle galaxie</a>
+                    <a href="planete.html">Nouvelle planète</a>
+                    <a href="fauneflore.html">Faune et Flore</a>
+                    <a id="vaiss" href="vaisseau2.html"><strong>Vaisseau</strong></a>
+                    <a href="fromulairespacial.html"><strong>POSTULEZ !</strong></a>
+            </nav>
+
+            
+            <h2>Le Magna Puppi</h2>
+            <p class="pva">Le Magna Puppi est un vaisseau d'une longueur d’un kilomètre, avec une capacité de 10 mille personnes formant l’équipage, ainsi que 11 autres millions qui seront passagers et qui ne sortiront pas de leurs caissons de cryogénisation jusqu’à ce que nous ayons atteint Gorosa. Ci-dessous est représenté un plan du Magna Puppi. Les principaux endroits vous sont présentés en détails : l’observatoire et poste de commande, la serre, l’entrepôt de caissons de cryogénisation, l’espace de stockage et d’armement et enfin les espaces de repos. Il vous suffit de clicker sur les images pour vous informer.</p>
+
+            <div id="spaceshipemenu">
+            <div id="left"><table>
+                <tr>
+                    <td id="tdleft"> 
+                        <h3 id="h3left">L'observatoire et poste de commandes</h3>
+                        <img id="myImg" class="lieu" alt="L'Observatoire et Poste de Commandes"  src="comand.png" />
+                                                
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"> <strong> L'Observatoire et Poste de Commandes :</strong> <br><br> L'observatoire est l'endroit où travailleront les scientifiques de l'équipage. Là, ils calculeront les trajectoires par rapport aux astres que nous n'avions pas encore repérés. Le poste de commande, juste à côté, permettras au scientifiques de manoeuvrer le Magna Puppi si besoin. Cependant, le Magna Puppi étant très volumineux, il n'aura pas a capacité de tourner facilement. Ces manoeuvres seront donc longues et devront être précises. La vitesse du Magna Puppi devrait être de 200 km/s lorsque nous aurons terminé le décollage.
+                                </div>
+                            
+                            </div>
+
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td id="tdleft"> 
+                        <h3 id="h3left">Les caissons de cryogénisation</h3>
+                        <img class="lieu" id="myImg3" src="https://cdn-media.rtl.fr/cache/EusMFLo5BMFRUzOtai4jTg/880v587-0/online/image/2016/1006/7785145649_aliens-sleep-pod-833x554.jpg" />
+                        <div id="myModal3" class="modal">
+                            <span class="close3">&times;</span>
+                            <img class="modal-content" id="img03">
+                            <div id="caption3"> <strong> Les caissons de cryogénisation :</strong> <br><br> Les caissons de cryogénisation nous permettrons de n'avoir veilli que de quelques années lorsque nous attérirons sur Gorosa. L'équipage au complet se réveillera tous les 5 000 ans afin d'effectuer la maintenance du Magna Puppi. Autrement, le reveil ne s'effectuera qu'à 2 ou 4 personnes pour surveiller le Magna Puppi. La possibilité de réveiller un supérieur en cas de problème sera néanmoins bien sûr possible. C'est également là, mais à un étage plus bas, où seront disposés les caissons des 11 000 passagers à nous accompagner pour le voyage.
+                            </div>
+                        
+                        </div>
+                    </td>
+                   
+                </tr><tr>
+                    <td id="tdleft"> 
+                        <h3 id="h3left">Le stockage et l'armement</h3>
+                        <img class="lieu" id="myImg5" src="https://docplayer.fr/docs-images/75/71761121/images/1-0.jpg">
+                        <div id="myModal5" class="modal">
+                            <span class="close5">&times;</span>
+                            <img class="modal-content" id="img05">
+                            <div id="caption5"> <strong> Le stockage et l'armement :</strong> <br><br> Le stockage permet de stocker absolument tout ce dont nous aurons besoin durant notre voyage, mais également ce que nous souhaitons amener sur notre nouvelle planète, comme des grandes bases de données ou des graines. Nous disposerons de nourriture congelée, d'hélicoptères, que nous utiliserons sur la planète, de combinaisons spatiales, et de bien d'autre choses. L'armement quant à lui est indispensable en cas d'attaque extra-terrestre. Nous n'aurons peut-être pas à nous en servir, mais on ne sait jamais.
+                            </div>
+                        
+                        </div>
+
+                    </td>
+                   
+                </tr>
+            </table></div>
+            <div id="middle">
+
+            <img class="plan" src="plan1.png" />
+            </div>
+            <div id="right"><table>
+                <tr>
+                    <td id="tdright"> <h3 id="h3right">Les espaces de repos</h3>
+
+                    <img class="lieu" id="myImg4" src="https://external-preview.redd.it/ybj3Te4MOSbgUNRluGe835Toh41sAyp4DC5VoR5MVe8.jpg?auto=webp&s=289ff69b91b75f565a19bda7a3faf92177910c8b" />
+                    
+                    <div id="myModal4" class="modal">
+                        <span class="close4">&times;</span>
+                        <img class="modal-content" id="img04">
+                        <div id="caption4"> <strong> Les espaces de repos :</strong> <br><br> Les espaces de repos sont composés de la cantine, votre chambre, ainsi que les douches et toilettes publics. La cantine est un réfectoire immense, et le seul endroit qui dispose de cuisines. Les chambres sont composées de deux lits. Un partenaire vous sera associé, avec qui vous ferez également vos rondes de surveillance du Magna Puppi, lorsque ce sera votre tour de sortir de vos caissons de cryogénisation. Il sera possible de changer de partenaire si des problèmes surviennent. Les douches et toilettes publiques marchent grâce à des recycleurs d'eau.
+                        </div>
+                    
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                    <td id="tdright">
+                        <h3 id="h3right">La serre</h3>
+                        
+                        <img id="myImg2" class="lieu" alt="serre" src="https://media-cdn.tripadvisor.com/media/photo-s/0b/b9/ff/49/the-dome-inside.jpg" /> 
+                        <div id="myModal2" class="modal">
+                            <span class="close2">&times;</span>
+                            <img class="modal-content" id="img02">
+                            <div id="caption2"> <strong> La serre :</strong> <br><br> Les serres sont primordiales pour la survie de l'équipage. Bien sur, l'utilisation de caissons de cryogénisation nous permettra de n'être que 2 à 4 personnes de garde sur le Magna Puppi, cependant durant ce voyage de 15 000 ans, nous serons parfois tous réveillés et cette serre nous permettra de nous nourrire en fruits, en légumes, mais également en féculents. Nous pourrons même faire du pain grâce au maïs que nous cultiverons.</div> 
+                        </div>
+                    </td>
+
+                   
+                </tr>
+                 
+            </table></div>
+        </diV>
+        <br><br><br><br><br>
+            <footer id="navb"> 
+                <p>Contactez nous:
+                <a href="https://www.facebook.com/iris.hubert.37"><img id="reseau" src="fb.png" height="30px" width="30px"></a>
+                <a href="https://www.instagram.com/calciphil/"><img id="reseau" src="insta.png"height="30px" width="30px"></a>
+                <a href="thewho.html">Qui Sommes Nous ?</a>
+                </p>
+            </footer>
+        
+            
+        
+        </body>
+    <script>
+        // Get the modal1
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        /*var captionText = document.getElementById("caption");*/
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+
+        // Get the modal2
+        var modal2 = document.getElementById("myModal2");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img2 = document.getElementById("myImg2");
+        var modalImg2 = document.getElementById("img02");
+        img2.onclick = function(){
+            modal2.style.display = "block";
+            modalImg2.src = this.src;
+        }
+
+        // Get the <span> element that closes the modal
+        var span2 = document.getElementsByClassName("close2")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span2.onclick = function() {
+            modal2.style.display = "none";
+        }
+
+        
+        // Get the modal3
+        var modal3 = document.getElementById("myModal3");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img3 = document.getElementById("myImg3");
+        var modalImg3 = document.getElementById("img03");
+        img3.onclick = function(){
+            modal3.style.display = "block";
+            modalImg3.src = this.src;
+        }
+
+        // Get the <span> element that closes the modal
+        var span3 = document.getElementsByClassName("close3")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span3.onclick = function() {
+            modal3.style.display = "none";
+        }
+
+
+        // Get the modal4
+        var modal4 = document.getElementById("myModal4");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img4 = document.getElementById("myImg4");
+        var modalImg4 = document.getElementById("img04");
+        img4.onclick = function(){
+            modal4.style.display = "block";
+            modalImg4.src = this.src;
+        }
+
+        // Get the <span> element that closes the modal
+        var span4 = document.getElementsByClassName("close4")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span4.onclick = function() {
+            modal4.style.display = "none";
+        }     
+
+        // Get the modal5
+        var modal5 = document.getElementById("myModal5");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img5 = document.getElementById("myImg5");
+        var modalImg5 = document.getElementById("img05");
+        img5.onclick = function(){
+            modal5.style.display = "block";
+            modalImg5.src = this.src;
+        }
+
+        // Get the <span> element that closes the modal
+        var span5 = document.getElementsByClassName("close5")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span5.onclick = function() {
+            modal5.style.display = "none";
+        }   
+        
+    </script>
+</html>

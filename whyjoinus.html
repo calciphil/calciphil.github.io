@@ -1,0 +1,353 @@
+<html>
+    <script>
+        function doFirst(){
+                var button=document.getElementById("button");
+                button.addEventListener("click", addContent,false);
+            }
+            function addContent(){
+                var one=document.getElementById("one").value;
+                const spaceadd=document.querySelector('#spaceadd');
+                spaceadd.innerHTML += '<p style="margin-left: 30px;">- '+one+'</p>';
+                alert(newheight);
+            }
+        window.addEventListener("load",doFirst,false);
+    </script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .choice{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        min-height:50vh;
+    }
+    .container{
+        position: relative;
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin:20px;
+    } 
+    .container .card{
+        position: relative;
+        height: 296px;
+        background: #fff;
+        display: flex;
+        width: 45%;
+        margin: 30px 0;
+    }
+    .container .card .imgBx{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background: rgb(58, 48, 145);
+        z-index:1;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+    .container .card:hover .imgBx{
+        width: 150px;
+        height:150px;
+        left: -75px;
+        top: calc(50% - 75px);
+        transition: 0.5s ease-in-out;
+        background:  tomato;
+    }
+    .container .card .imgBx:before{
+        content: attr(data-text);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align:center;
+        font-style: 6em;
+        color: rgba(255, 255, 255, .05);
+        font-weight: 700px;
+    }
+    .container .card .imgBx img{
+        max-width: 100px;
+        transition:0.5s ease-in-out;
+    }
+    .container .card:hover .imgBx img{
+        max-width: 75px;
+    }
+    .container .card .content{
+        position: absolute;
+        right:0;
+        width: calc(100% - 75px);
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .card .content h3{
+        margin-bottom: 5px;
+        font-size: 24px;
+    }
+    @media (max-width: 992px)
+    {
+        .container{
+            width:100%;
+            flex-direction:column;
+            align-items:center;
+        }
+        .container .card
+        {
+            width: 400px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    @media (max-width: 768px)
+    {
+        .container .card
+        {
+            max-width: 300px;
+        }
+        .container .card .imgBx{
+            position: relative;
+        } 
+        p{
+            font-size: 12px;
+        }
+    }
+body{
+    background-position: 20%;
+    background-image: url(https://blogs.esa.int/space19plus/files/2019/03/nebula.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html{
+    font-family: 'Noto Sans', sans-serif;
+    font-variant: small-caps;
+}
+h1{
+    text-align: center;
+    width: 1000px;
+    font-variant: small-caps;
+    text-shadow: 4px 3px rgb(3, 3, 3);
+    font-size: 50px;
+    color: whitesmoke;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    width: 70%;
+    padding-left: 10px;
+}
+h2{
+    text-align: center;
+    width: 1000px;
+    font-variant: small-caps;
+    text-shadow: 3px 3px rgb(3, 3, 3);
+    font-size: 40px;
+    color: whitesmoke;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    width: 70%;
+    padding-left: 10px;
+}
+#reseau:hover{
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+#acc{
+    color: rgb(243, 94, 35);
+}
+
+.nava a:hover{
+    color: tomato;
+}
+#navb a:hover{
+    color: tomato;
+}
+.nava{
+    color: white;
+    background-color: rgb(58, 48, 145);
+    opacity: 0.8;
+    text-align: center;
+    padding: 5px;
+}
+.nava a{
+    font-size: large;
+    text-align: center;
+    display: flex;
+    display: inline;
+    padding-left: 10px ;
+    text-decoration: none;
+    color: white;
+}
+#navb{
+    color: white;
+    background-color: rgb(58, 48, 145);
+    opacity: 0.8;
+    text-align: center;
+    padding: 5px;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+}
+#navb a{
+    text-align: center;
+    display: flex;
+    display: inline;
+    padding-left: 50px ;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+.pic{
+    float:left;
+    margin-left: 50px; 
+}
+header{
+    padding: 10px;
+
+}
+.p1{
+margin: auto;
+padding-right: 200px;
+max-width: 700px;
+width: 100%;
+}
+.p2{
+margin: auto;
+padding-left: 250px;
+max-width: 700px;
+width: 100%;
+}
+.text{
+    width:1000px;
+    margin-left:250px;
+    margin-top:100px;
+    background-color: white;  
+    border-style: double; 
+    flex-direction: column;
+}
+.enter{
+    background-color: white;
+}
+</style>
+
+<head>
+    <title>Pourquoi nous rejoindre ?</title>
+
+    <link rel="shortcut icon" href="planet.ico" />
+</head>
+<body >
+    <header>
+        <div>
+            <img src="plane.png"  height="200px" width="200px" class="pic">                     
+        </div>
+        
+        <h1>L'incroyable Aventure Gorosa</h1>
+
+    </header>
+    
+    <nav class="nava">
+            <a href="project.html">Accueil</a>
+            <a id="acc" href="whyjoinus.html"><strong>Pourquoi nous accompagner ?</strong></a>
+            <a href="maxgalax.html">Nouvelle galaxie</a>
+            <a href="planete.html">Nouvelle planète</a>
+            <a href="fauneflore.html">Faune et Flore</a>
+            <a href="vaisseau2.html">Vaisseau</a>
+            <a href="fromulairespacial.html"><strong>POSTULEZ !</strong></a>
+    </nav>
+    <h2>Aller là où aucun homme n’est allé auparavant… <br>ACCOMPAGNEZ-NOUS !</h2>
+    <div class="zone_text" style="text-align: center;">
+        <p style="color: white; font-size: 20px;">
+            Notre expédition à Gorosa est bien plus qu'un voyage dans 
+            l’espace.<br> Notre mission sera d’explorer un nouveau monde, 
+            découvrir de nouvelles vies et d’aller là où aucun homme 
+            n’est allé auparavant !<br>
+        </p>
+    </div>
+    <div class="choice">
+        <div class="container">
+            <div class="card">
+                <div class="imgBx" data-text="">
+                    <img src="idea.png">
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>Rêve</h3>
+                        <p>
+                            En rejoignant notre équipe vous aurez la possibilité de réaliser vos rêves les plus fous. Que ce soit de découvrir la première espèce d’Alien ou encore de devenir le nouveau « Neil Armstrong » de ce siècle. Faire partie de la mission à Gorosa va changer votre vie à jamais ! 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx" data-text="">
+                    <img src="money.png">
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>Ressource</h3>
+                        <p>
+                            Gorosa est une planète vierge avec de nouveaux centres de ressources, que ce soit du combustible ou de l’énergie renouvelable. Il y a des mines de diamants et de l’or en abondance. Participez à notre aventure et vous ne connaitrez plus jamais de soucis financiers.                        </p>
+                        
+                        </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx" data-text="">
+                    <img src="genetic.png">
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>Pouvoir Genetic</h3>
+                        <p>
+                            Les scientifiques ont découvert que Gorosa présente une atmosphère et composition atomique différente que celle de la Terre. Ces impacts sur le corps de l'être humain sont encore inconnus mais pourraient s'avérer avoir des effets extraordinaires sur les capacités physiques.
+Que ce soit la force musculaire ou encore l'accroissement de votre période de vie, Gorosa sera peut-être capable de faire de vous le Superman ou la Supergirl que vous avez tant rêvé être petit.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBx" data-text="">
+                    <img src="restart.png">
+                </div>
+                <div class="content">
+                    <div>
+                        <h3>2éme Chance</h3>
+                        <p>
+                            Gorosa est à 15 mille années de transport spatial depuis la terre. Les capsules de cryogénisation seront l’endroit où vous y passerez la majorité de votre voyage, endormi. Mission Gorosa est une aventure remplie de découvertes mais c'est avant tout un nouveau commencement, une deuxième chance, qui vous permettra de reconstruire votre vie comme vous l'avez toujours souhaité, sans problème financier et sans soucis de santé.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <footer id="navb"> 
+        <p>Contactez nous:
+        <a href="https://www.facebook.com/iris.hubert.37"><img id="reseau" src="fb.png" height="30px" width="30px"></a>
+        <a href="https://www.instagram.com/arcticvertigo/"><img id="reseau" src="insta.png"height="30px" width="30px"></a>
+        <a href="thewho.html">Qui Sommes Nous ?</a>
+        </p>
+    </footer>
+
+    
+
+</body>
+</html>

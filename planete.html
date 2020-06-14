@@ -1,0 +1,253 @@
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+    background-position: 20%;
+    background-image: url("gorosa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+  font-family: 'Noto Sans', sans-serif;
+    font-variant: small-caps;
+}
+
+h1 {
+    text-align: center;
+    width: 1000px;
+    font-variant: small-caps;
+    text-shadow: 4px 3px rgb(3, 3, 3);
+    font-size: 50px;
+    color: whitesmoke;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    width: 70%;
+}
+h2 {
+    text-align: center;
+    width: 1000px;
+    font-variant: small-caps;
+    text-shadow: 3px 3px rgb(3, 3, 3);
+    font-size: 40px;
+    color: whitesmoke;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    width: 70%;
+}
+.ope {
+    color: white;
+    background-color: rgb(58, 48, 145);
+    opacity: 0.8;
+    text-align: center;
+    padding: 20px;
+    margin-left: 150px;
+    margin-right: 150px; 
+     
+}
+
+.nava {
+    color: white;
+    background-color: rgb(58, 48, 145);
+    opacity: 0.8;
+    text-align: center;
+    padding: 5px;
+ 
+}
+
+.nava a {
+    text-align: center;
+    display: flex;
+    display: inline;
+    padding-left: 10px ;
+    text-decoration: none;
+    color: white;
+}
+
+
+.nava a:hover {
+    color: tomato;
+}
+
+#navb a:hover {
+    color: tomato;
+}
+
+#navb {
+    color: white;
+    background-color: rgb(58, 48, 145);
+    opacity: 0.8;
+    text-align: center;
+    padding: 5px;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+}
+
+#navb a {
+    text-align: center;
+    display: flex;
+    display: inline;
+    padding-left: 50px ;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.pic {
+    float:left;
+    margin-left: 40px; 
+    transition-duration: 1s;
+    transition-delay: 0,3s;
+}
+.pic:hover{
+  transform: rotate(45deg);
+}
+
+header {
+    padding: 10px;
+}
+
+.insider {
+  cursor: pointer;
+  margin-top: 20px;
+  height: 400px;
+  position: relative;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.card {
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 800px;
+  margin-top: 100px;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 400px;
+  position: absolute;
+  overflow: hidden;
+  width: 800px;
+}
+
+.card .back {
+  background: #89d7b1;
+  justify-content: center;
+  transform: rotateY(180deg);
+}
+
+.legende {
+    margin: 90px 0 24px;
+    text-align: justify;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    padding: 10px;
+}
+#reseau:hover{
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+#acc{
+    color: rgb(243, 94, 35);
+}
+ 
+</style>
+
+<head>
+    <title>Présentation planète</title>
+
+    <link rel="shortcut icon" href="planet.ico" />
+</head>
+<body >
+    <header>
+      <a href="project.html"><img src="plane.png"  height="200px" width="200px" class="pic"></a>                
+        
+
+            <h1>L'incroyable Aventure Gorosa</h1>
+
+    </header>
+
+    <nav class="nava">
+            <a href="project.html">Accueil</a>
+            <a href="whyjoinus.html">Pourquoi nous accompagner ?</a>
+            <a href="maxgalax.html">Nouvelle galaxie</a>
+            <a id="acc" href="planete.html"><strong>Nouvelle planète</strong></a>
+            <a href="fauneflore.html">Faune et Flore</a>
+            <a href="vaisseau2.html">Vaisseau</a>
+            <a href="fromulairespacial.html"><strong>POSTULEZ !</strong></a>
+    </nav>
+
+    <h2>La Géographie de Gorosa</h2>
+    <div class ="ope">
+        <p>Si vous commencez enfin à vous intérésser au splendide projet qu'est le nôtre, il est alors temps de vous présenter la planète où, peut-être, vous vivrez!</p>
+    </div>
+
+    <div>
+<div class="insider">
+  <div class="card">
+    <div class="side"><img src="gorosa2.png"></div>
+    <div class="side back"><p class="legende">En vous inscrivant, vous signez pour une aventure de découverte, de nouveauté sur Gorosa et surtout d'imaginaire. Un exemple parfait ? La double ceinture d'astéroïdes que composent les anneaux de Gorosa permettent un effet de <em>double gravité</em> permettant la création d'<em>îles flottantes</em>, et non, on ne parle pas de desserts ici, mais bien de surfaces terrestres en apesanteur. Pour en apprendre plus sur ce phénomène, retournez donc la carte dessous.</p></div>
+  </div>
+
+</div>
+<div class="insider">
+  <div class="card">
+    <div class="side"><img src="structure/ile_flottante.jpg"></div>
+    <div class="side back"><p class="legende">Que de beauté sur Gorosa! Ces îles sont de véritable biomes et transforment la vision de la physique connue. Ce pourquoi, nous serons accompagnés d'une équipe de 15 des meilleurs scientifiques pour l'étudier. Nés de la fusion des deux gravités présentent sur Gorosa, ces biomes agissent indépendement. Ce que l'on y trouve peut varier du tout au tout d'une île à la suivante, que ce soit en terme de faune, flore, reliefs... Plus encore, pour que l'équipage réussisse à y accoster nous devrons innover, car la théorie du bateau volant à dejà été mise en place mais sa pratique ne peut être vérifier qu'une fois sur place.</p></div>
+  </div>
+
+</div>
+<div class="insider">
+  <div class="card">
+    <div class="side"><img src="structure/continent.jpg" ></div>
+    <div class="side back"><p class="legende">Parlons désormais des continents et reliefs sur Gorosa<br>
+    Sur Gorosa, les Tapiris ont extrait de l'eau sous tout ses états, étant une très bonne nouvelle pour permettre l'expansion de la vie humaine dessus un jour. La planète a une superficie de environ 17 000 000 000 m². Contrairement à la planette bleue, Gorosa n'est pas composé à 71% d'eau mais à 67% de glace. Cela n'est encore qu'une moyenne car les Tapiris n'ont encore exploré l'ensemble des lieux, de plus ces statistiques ne comprennent pas les 1793 îles identifiées.</p></div>
+  </div>
+
+</div>
+<div class="insider">
+  <div class="card">
+    <div class="side"><img src="structure/composition.jpg" ></div>
+    <div class="side back"><p class="legende">La composition de l'air n'est pas encore très claire pour l'équipe se cachant derrière notre projet. Il semble que l'air soit respirable mais nous avons tout de même pris le temps de nous équiper de 45 combinaisons spatiales. En effet, les images rapportés montre un ciel jonché de nuages <span style="color: blue">bleu</span>, cependant certains d'entre eux sont <span style="color: rgb(255, 94, 0)">oranges</span> et cela reste incompris pour aujourd'hui. Nous pensons des particules de <span style="color: orange"> rouilles </span> pourrait être en suspention dans l'air, mais d'où proviendrai t-il? A priori les populations présentes n'avaient pas l'air assez avancées pour en arriver la.</p></div>
+  </div>
+
+</div>
+
+</div>
+
+<br><br><br><br><br><br>
+    <footer id="navb"> 
+        <p>Contactez nous:
+        <a href="https://www.facebook.com/iris.hubert.37"><img id="reseau" src="fb.png" height="30px" width="30px"></a>
+        <a href="https://www.instagram.com/calciphil/"><img id="reseau" src="insta.png"height="30px" width="30px"></a>
+        <a href="thewho.html">Qui Sommes Nous ?</a>
+        </p>
+    </footer>
+
+    
+
+</body>
+</html>

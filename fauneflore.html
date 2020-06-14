@@ -1,0 +1,563 @@
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body{
+    background-position: 20%;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-family: 'Noto Sans', sans-serif;
+    font-variant: small-caps;
+}
+h1{
+    text-align: center;
+    width: 1000px;
+    font-variant: small-caps;
+    text-shadow: 4px 3px rgb(3, 3, 3);
+    font-size: 50px;
+    color: whitesmoke;
+    width: 70%;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    margin-left: auto;
+}
+h3{
+  text-align: center;
+    width: 1000px;
+    font-variant: small-caps;
+    text-shadow: 3px 3px rgb(3, 3, 3);
+    font-size: 40px;
+    color: whitesmoke;
+    width: 70%;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    margin-left: auto;
+}
+
+.ope{
+    color: white;
+    background-color: rgb(58, 48, 145);
+    opacity: 0.8;
+    text-align: center;
+    padding: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+
+.nava{
+    color: white;
+    background-color: rgb(58, 48, 145);
+    opacity: 0.8;
+    text-align: center;
+    padding: 5px;
+
+}
+.nava a{
+    font-size: large;
+    text-align: center;
+    display: flex;
+    display: inline;
+    padding-left: 10px ;
+    text-decoration: none;
+    color: white;
+
+}
+.nava a:hover{
+    color: tomato;
+}
+#navb a:hover{
+    color: tomato;
+}
+#navb{
+    color: white;
+    background-color: rgb(58, 48, 145);
+    opacity: 0.8;
+    text-align: center;
+    padding: 5px;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+ 
+}
+#navb a{
+    text-align: center;
+    display: flex;
+    display: inline;
+    padding-left: 50px ;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+
+#mainheader{
+    padding: 10px;
+}
+
+.tet img{
+        float:left;
+        margin-left: 50px;
+        transition-duration: 1s;
+        transition-delay: 0,3s;
+    }
+.tet img:hover {
+   transform: rotate(45deg);
+}
+
+/*
+ = ======== flexbox ========
+*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+}
+
+.card {
+    flex: 0 0 300px;
+}
+
+
+/*
+ = ====== visuals =========
+*/
+* {
+    box-sizing: border-box;
+}
+
+.cards {
+    min-height: 100vh;
+}
+.card {
+    margin: 19px; 
+    background: #f2f2f2;
+    border-radius: 7px;
+    padding: 5 5 5px;
+}
+.card header {
+
+    height: 200px;
+    border-radius:  7px;
+    text-align: center;
+    font-size: 140%;
+}
+
+#card-big {
+    transform: scaleX(1.15) scaleY(1.15);
+}
+
+#card-big > header {
+    background-image: url(https://i.skyrock.net/8321/63368321/pics/3128173452_1_2_NpTPi59S.jpg);
+    background-size: cover;
+}
+
+#card1 > header{
+    background-image: url(http://miraclesseoceane.m.i.pic.centerblog.net/t4nxbsya.jpg);
+    background-size: cover;
+}
+
+#card2 > header{
+    background-image: url(https://c.wallhere.com/photos/cc/21/1920x1080_px_Air_artwork_Avatar_Dark_digital_art_fantasy_Art_forest-813600.jpg!d);
+    background-size: cover;
+}
+
+.cards p{
+    text-align: justify;
+}
+
+h2 {
+    background-color: rgba(58, 4, 145, 0.5);
+    font-size: 90%;
+    color: white;
+    font-weight: normal;
+    margin: 0 30px 0 30px;
+    border-radius: 8px;
+}
+
+.slider {
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slider2 {
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.slides::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  font-size: 100%;
+}
+
+.slides2 {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.slides2::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+.slides2::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides2::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides2 > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  font-size: 100%;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+.slider2 > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider2 > a:active {
+  top: 1px;
+}
+.slider2 > a:focus {
+  background: #000;
+}
+
+
+
+#slide-1 {
+    background-image: url(fauneflore/faune/Tapus.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#slide-2 {
+    background-image: url(fauneflore/faune/Goscargo_pineux.jpg);
+    background-repeat: no-repeat;
+    background-size: 98%;
+    margin-left: 2%;
+}
+#slide-3 {
+    background-image: url(fauneflore/faune/Chevamphibie.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 2%
+}
+#slide-4 {
+    background-image: url(fauneflore/faune/Gumaraja_souffleur.jpeg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    margin-left: 2%
+}
+#slide-5 {
+    background-image: url(fauneflore/faune/Goroquet.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 2%;
+}
+#slide-6 {
+    background-image: url(fauneflore/faune/alien_junky.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    margin-left: 2%;
+}
+#slide-7 {
+    background-image: url(fauneflore/faune/Mr_Meeseeks.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    margin-left: 10%;
+}
+
+#slide-11 {
+    background-image: url(fauneflore/flore/arbre_fruitier.webp);
+    background-repeat: no-repeat;
+    background-size: 85%;
+
+}
+#slide-22 {
+    background-image: url(fauneflore/flore/herbe_drogue.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-size: 90% auto;
+    margin-bottom: 2%;
+}
+#slide-33 {
+    background-image: url(fauneflore/flore/plante_toxique.webp);
+    background-repeat: no-repeat;
+    background-size: 95%;
+    margin-left: 2%
+}
+#slide-44 {
+    background-image: url(https://www.jardiner-malin.fr/wp-content/uploads/2018/12/coquelicot-1200x967.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 2%
+}
+
+span {
+    display: block;
+    margin-top: 80%;
+    padding: 10px;
+
+}
+
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
+
+@supports (scroll-snap-type) {
+  .slider2 > a {
+    display: none;
+  }
+}
+
+#champi {
+    margin-top: 20%;
+}
+
+#spec{
+  color: tomato;
+}
+
+#reseau:hover{
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+
+</style>
+
+<head>
+    <title>Faune & Flore</title>
+
+    <link rel="shortcut icon" href="planet.ico" />
+</head>
+<body >
+    <header id="mainheader">
+        <div class="tet">
+            <a href="project.html"><img src="plane.png"  height="200px" width="200px"></a>
+                       
+        </div>
+         
+
+            <h1>L'incroyable Aventure Gorosa</h1>
+        
+
+    </header>
+    
+    
+    
+    <nav class="nava">
+            <a href="project.html">Accueil</a>
+            <a href="whyjoinus.html">Pourquoi nous accompagner ?</a>
+            <a href="maxgalax.html">Nouvelle galaxie</a>
+            <a href="planete.html">Nouvelle planète</a>
+            <a href="fauneflore.html" id="spec"><strong>Faune et Flore</strong></a>
+            <a href="vaisseau2.html">Vaisseau</a>
+            <a href="fromulairespacial.html"><strong>POSTULEZ !</strong></a>
+    </nav>
+
+    <h3>La Faune et La Flore</h3>
+    <div class ="ope">
+      <p>Decouvrons l'univers de Gorosa! Notre équipe de d'ingénieur a envoyé un robot découvrir le monde qui se cache derrire un nom aussi poétique mais les découvertes peuvent vous faire froid dans le dos..</p>
+  </div>
+
+  <br><br>
+        <div class="cards">
+          <section class="card" id="card1">
+          <header> <h2> Faune de Gorosa </h2> </header>
+          <p>De ce que nous avons pu obtenir comme informations, Gorosa est une planette comme nous n'en connaissons encore! Elle se distingue par sa faune e sa flore inédite, ainsi que ses populations. Notre robot, le Tapiris, a pu recenser aujourd'hui 145 espèces terrestre, 78 espèces marines et plus de 700 espèces végétales! Certaines d'entre-elles sont présentées dans notre Gorodex ! Gorosa est tout simplement un rêve devenant réalité mais seulement destiné à une quantité de personne très limité..</p>
+          <div class="slider">
+  
+          <a href="#slide-1">1</a>
+          <a href="#slide-2">2</a>
+          <a href="#slide-3">3</a>
+          <a href="#slide-4">4</a>
+          <a href="#slide-5">5</a>
+          <a href="#slide-6">6</a>
+          <a href="#slide-7">7</a>
+
+          <div class="slides">
+            <div id="slide-1">
+              <span><h2> Le Tapus </h2> Le Tapus est à s'y méprendre, une espèce bien plus gentille que l'on peut imaginer, il semble se nourrir majoritairement d'algue. <br><br>
+              Alimentation : Herbivore<br><br>
+              Gout : bon <br><br>
+              Présence : proche plaine et source d'eau </span>
+            </div>
+            <div id="slide-2">
+              <span><h2>Le Goscargot-Pineux</h2>Le Goscargo pineux semble plus féroce que l'on ne le pense, capable de couper toute connection du Tapiris pendant plus de 24heures, il envoi ses piques à toute vitesses..  <br><br>
+              Alimentation : Carnivore<br><br>
+              Gout : Intéréssant avec du sel et de l'ail <br>
+              Présence : marécage </span>
+            </div>
+            <div id="slide-3">
+              <span><h2>Le Chevamphibie</h2>Aucun homme ne parle à l'oreille des chevamphibie sur Gorosa ! Créature pleine de surprise à approcher avec précaution. <br><br>
+              Alimentation : apprécie les tapiris.
+              Gout : Pas encore évalué <br><br>
+              Présence : Peut-être sur terre, peut-être en mer... </span>
+            </div>
+            <div id="slide-4">
+              <span><h2>Gumaraja souffleur</h2>Le Gumaraja n'as pas encore analysé de près, facheuse tendance a souffler sur ses obstacles. <br><br>
+              Alimentation : Planctovore<br><br>
+              Gout : Le tapiris-121 à été aspiré dans un Gumaraja et à pu envoyer une copie d'ADN avant d'etre dissout, les plus grands chfs se penchent sur le sujet. <br><br>
+              Présence : Mer et eaux profondes </span>
+            </div>
+            <div id="slide-5">
+              <span><h2>Le Goroquet</h2>Le goroquet compte parmis les éspèces les plus merveilleuse observé sur Gorosa, toujours en sortie de paire. <br><br>
+              Alimentation : Herbivore <br><br>
+              Gout : Aigre <br><br>
+              Présence : Le goroquet vit dans un nid souterrain</span>
+            </div>
+            <div id="slide-6">
+              <span><h2>Gorosien Junky</h2>Gorosa semble habiter par des êtres très pudique, mais nous avons obtenu un croquis d'un certain <q>King Gorosa</q>. <br><br>
+              Alimentation : ?? <br><br>
+              Gout : ?? <br><br>
+              Présence : Cachette </span>
+            </div>
+            <div id="slide-7">
+              <span><h2>Mr Meeseek</h2>Mr Meeseeks est sans aucun doute l'être le plus sociable de cette planète. Il exécute tout les ordres et disparait une fois la tâche terminé <br><br>
+              Alimentation : Ne mange pas, vit pour sa tache <br><br>
+              Gout : Ne pas essayer de les manger.. <br><br>
+              Présence : Proche des zones de vie</span>
+            </div>
+
+          </div>
+        </div>
+        </section>
+
+
+          <section class="card" id="card-big">
+          <header> <h2> Faune et Flore de Gorosa </h2> </header> 
+          <p>De ce que nous avons pu obtenir comme informations, Gorosa est une planette comme nous n'en connaissons encore! Elle se distingue par sa faune et sa flore inédite, ainsi que ses populations. Notre robot, le Tapiris, a pu recenser aujourd'hui 145 espèces terrestre, 78 espèces marines et plus de 700 espèces végétales! Certaines d'entre-elles sont présentées dans notre Gorodex ! Gorosa est tout simplement un rêve devenant réalité mais seulement destiné à une quantité de personne très limité..</p>
+        </section>
+          
+          <section class="card" id="card2">
+          <header> <h2> Flore de Gorosa </h2> </header>
+          <p>De ce que nous avons pu obtenir comme informations, Gorosa est une planette comme nous n'en connaissons encore! Elle se distingue par sa faune et sa flore inédite, ainsi que ses populations. Notre robot, le Tapiris, a pu recenser aujourd'hui 145 espèces terrestre, 78 espèces marines et plus de 700 espèces végétales! Certaines d'entre-elles sont présentées dans notre Gorodex ! Gorosa est tout simplement un rêve devenant réalité mais seulement destiné à une quantité de personne très limité..</p>
+          <div class="slider2">
+  
+          <a href="#slide-11">1</a>
+          <a href="#slide-22">2</a>
+          <a href="#slide-33">3</a>
+          <a href="#slide-44">4</a>
+
+          <div class="slides2">
+            <div id="slide-11">
+              <span><h2> Le Bubli-bouts </h2> Le bubli-bouts et ses apparences magistrales n'est en réalité qu'un arbre fruitier manger par les aliens junkys ! Les tapiris ont récoltés de nombreux extraits qui sont en cours d'observation mais ce qui est sur est que le gout du bubli-bouts est à s'y méprendre celui de la tarte tatin. <br><br>
+              Gout : délicious <br><br>
+              Présence : Pousse dans les plaines du sarcassa. </span>
+            </div>
+            <div id="slide-22">
+              <span><h2 id="champi">Le TétraHydroChampignignolle</h2>Ce champignons est illégale, il apporte les mêmes effets que le THC connu sur la plaette terre de la dimention C-137. Il sera banni de s'en approcher, ce champignon est non létale, personne n'en meurt mais c'est comme ça que l'on fait de nos jours  <br><br>
+              Gout : N'y touchez pas !<br><br>
+              Présence : Dans les grottes, la ou les reflets des rayons du soleil permettent une temperature chaude et une lumière indirecte. </span>
+            </div>
+            <div id="slide-33">
+              <span><h2>Les Tixtoxygène</h2>Ces petites bulles virevoltantes sont aussi mignonnes que dangereuses à priori. Le moindre désordre dans son environnement le fais éclater et il libère alors soit un poison mortel, soit un parfum de Barbapapa <br><br>
+              Gout : Au petit bonheur la chance <br><br>
+              Présence : Ces plantes sont partout où l'on ne les veux pas, plante ténace et envahissante. </span>
+            </div>
+            <div id="slide-44">
+              <span><h2>Des coquelicots</h2>Pourquoi Gorosa n'aurai pas le droit à la légereté des coquelicots ? Ici aussi, il y en as! <br><br>
+              Gout : C'est une plante de beauté, pas de nourriture <br><br>
+              Présence : Au printemps Gorosien. </span>
+            </div>
+
+          </div>
+        </section>
+        </div>
+
+        
+
+    <footer id="navb"> 
+        <p>Contactez nous:
+        <a href="https://www.facebook.com/iris.hubert.37"><img id="reseau" src="fb.png" height="30px" width="30px"></a>
+        <a href="https://www.instagram.com/calciphil/"><img id="reseau" src="insta.png"height="30px" width="30px"></a>
+        <a href="thewho.html">Qui Sommes Nous ?</a>
+        </p>
+    </footer>
+
+    
+
+</body>
+</html>

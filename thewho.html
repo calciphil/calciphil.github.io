@@ -1,0 +1,256 @@
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body{
+    background-position: 20%;
+    background-image: url("airback.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    top: 0px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+#reseau:hover{
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+html{
+    font-family: 'Noto Sans', sans-serif;
+    font-variant: small-caps;
+}
+#p3{
+    margin: 0px;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    width: 1000px;
+    font-variant: small-caps;
+    text-shadow: 4px 3px rgb(3, 3, 3);
+    font-size: 50px;
+    color: whitesmoke;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    width: 70%;
+
+}
+h2{
+    text-align: center;
+    width: 1000px;
+    font-variant: small-caps;
+    text-shadow: 3px 3px rgb(3, 3, 3);
+    font-size: 40px;
+    color: whitesmoke;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    width: 70%;
+
+}
+
+#acc{
+    color: rgb(243, 94, 35);
+}
+
+.nava a:hover{
+    color: tomato;
+}
+.navb a:hover{
+    color: tomato;
+}
+.nava{
+    color: white;
+    background-color: rgb(58, 48, 145);
+    opacity: 0.8;
+    text-align: center;
+    padding: 5px;
+ 
+}
+.nava a{
+    font-size: large;
+    text-align: center;
+    display: flex;
+    display: inline;
+    padding-left: 10px ;
+    text-decoration: none;
+    color: white;
+
+}
+
+.navb{
+    color: white;
+    background-color: rgb(58, 48, 145);
+    opacity: 0.8;
+    text-align: center;
+    padding: 5px;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+ 
+}
+.navb a{
+    text-align: center;
+    display: flex;
+    display: inline;
+    padding-left: 50px ;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.pic{
+    float:left;
+    margin-left: 50px; 
+}
+
+header{
+    padding: 10px;
+
+}
+
+.air{
+    text-align: center;
+    margin-left: 90px;
+    margin-right: 90px;
+    background-color: rgba(245, 245, 245, 0.582);
+}
+
+#notete{
+    display: flex;
+
+}
+figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+}
+
+figure img{
+    width: 10%;
+    height: auto;
+    transition: 1s;
+    opacity: 0.9;
+}
+
+.pepo:hover{
+    width: 13%;
+    opacity: 1;
+}
+
+
+#te1, #te2, #te3{
+    text-align: center;
+    width: 33%;
+    margin: auto;
+    background-color: rgba(245, 245, 245, 0.562);
+
+}
+#teh{
+    display: flex;
+}
+
+.tet img{
+    float:left;
+    margin-left: 40px;
+    transition-duration: 1s;
+    transition-delay: 0,3s;
+}
+
+header{
+    padding: 10px;
+}
+    
+.tet img:hover {
+    transform: rotate(45deg);
+}
+
+</style>
+
+<head>
+    <title>Qui sommes nous ?</title>
+
+    <link rel="shortcut icon" href="planet.ico" />
+</head>
+<body >
+    <header>
+        <div class="tet" >
+            <a href="project.html"><img src="plane.png"  height="200px" width="200px" class="pic"></a>                     
+        </div>
+        
+        <h1>L'incroyable Aventure Gorosa</h1>
+
+    </header>
+    
+
+    <nav class="nava">
+            <a href="project.html">Accueil</a>
+            <a href="whyjoinus.html">Pourquoi nous accompagner ?</a>
+            <a href="maxgalax.html">Nouvelle galaxie</a>
+            <a href="planete.html">Nouvelle planète</a>
+            <a href="fauneflore.html">Faune et Flore</a>
+            <a href="vaisseau2.html">Vaisseau</a>
+            <a href="fromulairespacial.html"><strong>POSTULEZ !</strong></a>
+    </nav>
+
+    <h2>Qui sommes nous ?</h2>
+
+    <p class="air">Etudiants en 2e année à Efrei Paris, nous nous sommes mobilisés pour soutenir la collonisation spatiale en leur fournissant un site. Nous formons à nous trois : Philip, Iris et Amon, l'équipe de recrutement depuis internet. Si vous avez quelque question que ce soit, n'hésitez pas à nous joindre via les réseaux sociaux sur <a href="https://www.facebook.com/iris.hubert.37">facebook</a> ou <a href="https://www.instagram.com/calciphil/">instagram</a>, ou bien à notre adresse mail : <a href="mailto:gravisore@gmail.com">gravisore@gmail.com</a></p>
+<br>
+<div id="notete">
+    <figure>
+        <img id="dot1" class="pepo" src="philip.png" alt="philip" width="30px" height="40px" onmouseover="showphil()" onmouseout="shownofear()">
+        <img id="dot2" class="pepo" src="iris.png" alt="iris" width="30px" height="40px" onmouseover="showsiri()" onmouseout="shownofear()">
+        <img id="dot3" class="pepo" src="amon.png" alt="amon" width="30px" height="40px" onmouseover="showamon()" onmouseout="shownofear()">
+    </figure>
+        
+</div>
+<div id="teh">
+    <p id="te1">Philip Kirby est notre spécialiste chercheur. Il s'occupe de comprendre la faune et la flore de Gorosa, ainsi que la géographie de notre future planète. Nous devons beaucoup à ses recherches.</p>
+    <p id="te2">Iris Hubert et ses innovantes idées de recruttement ont beaucoup aidé l'aventure vers Gorosa à prendre vie. Elle est la spécialiste spatiale, s'occupant du vaisseau et de l'exploration de la galaxie. Elle a également un rôle de psychologue sur le vaisseau, qui se traduit ici par la création d'un QCM.</p>
+    <p id="te3">Amon Berberovic est notre recruteur de choc. Il s'occupe d'expliquer aux gens pour quelle raison ils devraient embarquer dans l'aventure vers Gorosa.</p>
+</div>
+<br><br>
+    <footer class="navb"> 
+        <p id="p3">Contactez nous:
+        <a href="https://www.facebook.com/iris.hubert.37"><img id="reseau" src="fb.png" height="30px" width="30px" ></a>
+        <a href="https://www.instagram.com/calciphil/"><img id="reseau" src="insta.png"height="30px" width="30px"></a>
+        <a  id="acc" href="thewho.html">Qui Sommes Nous ?</a>
+        </p>
+    </footer>
+
+    
+<script>
+
+    function showphil(){
+        document.querySelector("#te1").style.display = "block";
+        document.querySelector("#te2").style.display = "none";
+        document.querySelector("#te3").style.display = "none";
+    }
+    function showsiri(){
+        document.querySelector("#te1").style.display = "none";
+        document.querySelector("#te2").style.display = "block";
+        document.querySelector("#te3").style.display = "none";
+    }
+    function showamon(){
+        document.querySelector("#te1").style.display = "none";
+        document.querySelector("#te2").style.display = "none";
+        document.querySelector("#te3").style.display = "block";
+    }
+    function shownofear(){
+        document.querySelector("#te1").style.display = "block";
+        document.querySelector("#te2").style.display = "block";
+        document.querySelector("#te3").style.display = "block";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,474 @@
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+    html{
+        font-family: 'Noto Sans', sans-serif;
+        font-variant: small-caps;
+    }
+    body{
+        background-position: 20%;
+        background-image: url("from.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;        
+    }
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    #reseau:hover{
+        filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+    }
+
+    h1{
+        padding: 10px;
+        text-align: center;
+        width: 1000px;
+        margin-right: auto;
+        margin-top: 60px;
+        margin-bottom: 70px;
+        margin-left: auto;
+        font-variant: small-caps;
+        text-shadow: 4px 3px whitesmoke;
+        font-size: 50px;
+        width: 70%;
+        color: black;
+    }
+    h2{
+        text-align: center;
+        width: 1000px;
+        margin-right: auto;
+        margin-top: 60px;
+        margin-bottom: 70px;
+        margin-left: auto;
+        font-variant: small-caps;
+        text-shadow: 3px 3px whitesmoke;
+        font-size: 40px;
+        width: 70%;
+        color: black;
+    }
+
+    .nava{
+        color: white;
+        background-color: rgb(58, 48, 145);
+        opacity: 0.8;
+        text-align: center;
+        padding: 5px;
+        
+    }
+    .nava a{
+        font-size: large;
+        text-align: center;
+        display: flex;
+        display: inline;
+        padding-left: 10px ;
+        text-decoration: none;
+        color: white;
+    
+    }
+    .nava a:hover{
+        color: tomato;
+    }
+    #navb a:hover{
+        color: tomato;
+    }
+    #navb{
+        color: white;
+        background-color: rgb(58, 48, 145);
+        opacity: 0.8;
+        text-align: center;
+        padding: 5px;
+        bottom: 0px;
+        left: 10px;
+        right: 10px;
+    }
+    #navb a{
+        text-align: center;
+        display: flex;
+        display: inline;
+        padding-left: 50px ;
+        text-decoration: none;
+        color: white;
+        font-size: large;
+        
+    }
+
+
+    .tet img{
+        float:left;
+        margin-left: 50px;
+        transition-duration: 1s;
+        transition-delay: 0,3s;
+    }
+
+    header{
+        padding: 10px;
+    }
+        
+    .tet img:hover {
+        transform: rotate(45deg);
+    }
+
+    .tapir{
+        margin-top: 10px;
+        margin-left:600px;
+        display: flex;
+        opacity:0;
+    }
+
+    .tapir:hover{
+        opacity: 1;
+    }
+
+
+    #quiz, #results{
+        background-color: rgba(255, 150, 80, 0.733);
+        box-shadow: 3px 4px rgb(0, 0, 0);
+        text-align: center;
+        line-height: 50px;
+    }
+    #submit{  
+        font-variant: small-caps;      
+  
+        max-width: 1050px;
+		display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0.85;
+    }
+
+    #submit:hover{
+        cursor: pointer;
+    }
+
+    .qfo{
+		box-sizing: border-box;
+		padding-left: 10px;
+		padding-right: 10px;
+		max-width: 1050px;
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+		width: 100%;
+        font-variant: small-caps;
+        margin-bottom: 15px;
+    }
+
+    #results{
+        margin-top: 70px;
+        text-align: center;
+        font-size: large;
+
+    }
+
+    #po3{
+        margin-top: 0px;
+        background-color: rgba(245, 245, 245, 0.603);
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .question{
+        font-weight: bold;
+    }
+
+    #postu{
+        color: tomato;
+        
+    }
+</style>
+<head>
+    
+    <title>Lancez-vous!</title>
+    <link rel="shortcut icon" href="planet.ico"/>
+</head>
+
+<body>
+    <header>
+        <div class="tet">
+            <a href="project.html"><img src="plane.png"  height="200px" width="200px"></a>
+                       
+        </div>
+
+            <h1 style="line-height: 50px;">L'incroyable Aventure Gorosa</h1>
+
+    </header>
+
+    <nav class="nava">
+        <a href="project.html">Accueil</a>
+        <a href="whyjoinus.html">Pourquoi nous accompagner ?</a>
+        <a href="maxgalax.html">Nouvelle galaxie</a>
+        <a href="planete.html">Nouvelle planète</a>
+        <a href="fauneflore.html">Faune et Flore</a>
+        <a href="vaisseau2.html">Vaisseau</a>
+        <a id="postu" href="fromulairespacial.html"><strong>POSTULEZ !</strong></a>
+    </nav>
+
+    <h2>Tentez Votre Chance Et Lancez-Vous Dans L'Aventure</h2>
+
+    
+    <div class="qfo">
+        <p id="po3">Afin de postuler, vous n'avez qu'à nous envoyer votre candidature par les réseaux sociaux via <a href="https://www.facebook.com/iris.hubert.37">facebook</a> ou <a href="https://www.instagram.com/calciphil/">instagram</a>, ou alors par mail : <a href="mailto:gravisore@gmail.com">gravisore@gmail.com</a>. Elle devra contenir votre CV ainsi qu'une brève lettre de motivation. Il nous tarde de vous voir dans notre équipe !<br><br><strong>Faites ce QCM afin de savoir dans quelle section vous pourriez éventuellement être pris.</strong></p>
+        <div  id="quiz"></div>
+        <img class="tapir" src="tapir.png" height="70px" width="70px">
+        <button id="submit">Répondre</button>
+
+        <div id="results"></div>
+    </div>
+    <br><br><br><br><br>
+    <footer id="navb"> 
+        <p>Contactez nous:
+        <a href="https://www.facebook.com/iris.hubert.37"><img id="reseau" src="fb.png" height="30px" width="30px"></a>
+        <a href="https://www.instagram.com/calciphil/"><img id="reseau" src="insta.png"height="30px" width="30px"></a>
+        <a href="thewho.html">Qui Sommes Nous ?</a>
+        </p>
+    </footer>
+	
+</body>
+<script>
+
+
+    // Quizz 
+
+
+
+    function buildQuiz(){
+    // variable to store the HTML output
+    const output = [];
+
+    // for each question...
+    myQuestions.forEach(
+        (currentQuestion, questionNumber) => {
+
+        // variable to store the list of possible answers
+        const answers = [];
+
+        // and for each available answer...
+        for(letter in currentQuestion.answers){
+            
+            // ...add an HTML radio button
+            answers.push(
+            `<label>
+                <input type="radio" name="question${questionNumber}" value="${letter}">
+                ${letter}:
+                ${currentQuestion.answers[letter]}
+                
+            </label>`
+            );
+        }
+
+        // add this question and its answers to the output
+        output.push(
+            `<div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answers.join('')} </div>`
+        );
+        }
+    );
+
+    // finally combine our output list into one string of HTML and put it on the page
+    quizContainer.innerHTML = output.join('');
+    }
+
+    function showResults(){
+
+        // gather answer containers from our quiz
+        const answerContainers = quizContainer.querySelectorAll('.answers');
+
+        // keep track of user's answers
+        let num1 = 0;
+        let num2 = 0;
+        let num3 = 0;
+        let num4 = 0;
+
+        // for each question...
+        myQuestions.forEach( (currentQuestion, questionNumber) => {
+           
+
+        // find selected answer
+        const answerContainer = answerContainers[questionNumber];
+        const selector = `input[name=question${questionNumber}]:checked`;
+        var userAnswer = 0;
+        userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+        
+        // if answer is correct
+        if(userAnswer === currentQuestion.answer1){
+            // add to the number of correct answers
+            num1++;
+
+        }
+        // if answer is wrong or blank
+        else if (userAnswer === currentQuestion.answer2)
+        {
+            num2++;
+        }
+        else if (userAnswer === currentQuestion.answer3)
+        {
+            num3++;
+        }
+        else if (userAnswer === currentQuestion.answer4)
+        {
+            num4++;
+        }
+        
+        });
+
+       
+        // show number of correct answers out of total
+
+        if((num1==4 && num2==0 && num3==0 && num4==0) || (num1==3 && num2==0 && num3==1 && num4==0) || (num1==3 && num2==1 && num3==0 && num4==0) || (num1==3 && num2==0 && num3==0 && num4==1)){
+            resultsContainer.innerHTML = "Affectation 1 : navigateur, affectation 2 : agronome";
+        }
+        else if((num1==0 && num2==4 && num3==0 && num4==0) || (num1==0 && num2==3 && num3==1 && num4==0) || (num1==0 && num2==3 && num3==0 && num4==1)){
+            resultsContainer.innerHTML = "Affectation 1 : explorateur de terrain, affectation 2 : maintenance spaciale";
+        }
+        else if((num1==0 && num2==0 && num3==4 && num4==0) || (num1==1 && num2==0 && num3==3 && num4==0) || (num1==0 && num2==0 && num3==3 && num4==1) || (num1==0 && num2==1 && num3==3 && num4==0)){
+            resultsContainer.innerHTML = "Affectation 1 : médecin, affectation 2 : sécurité spaciale";
+        }
+        else if((num1==0 && num2==0 && num3==0 && num4==4) || (num1==0 && num2==0 && num3==1 && num4==3) || (num1==0 && num2==1 && num3==0 && num4==3) || (num1==1 && num2==0 && num3==0 && num4==3)){
+            resultsContainer.innerHTML = "Affectation 1 : navigateur, affectation 2 : explorateur de terrain";
+        }
+
+
+        else if(num1==1 && num2==1 && num3==0 && num4==2){
+            resultsContainer.innerHTML = "Affectation 1 : agronome, affectation 2 : navigateur";
+        }
+        else if(num1==1 && num2==0 && num3==1 && num4==2){
+            resultsContainer.innerHTML = "Affectation 1 : agronome, affectation 2 : sécurité spaciale";
+        }
+        else if(num1==0 && num2==1 && num3==1 && num4==2){
+            resultsContainer.innerHTML = "Affectation 1 : maintenance spaciale, affectation 2 : navigateur";
+        }
+
+        else if(num1==1 && num2==0 && num3==2 && num4==1){
+            resultsContainer.innerHTML = "Affectation 1 : médecin, affectation 2 : navigateur";
+        }
+        else if(num1==1 && num2==1 && num3==2 && num4==0){
+            resultsContainer.innerHTML = "Affectation 1 : médecin, affectation 2 : explorateur de terrain";
+        }
+        else if(num1==0 && num2==1 && num3==2 && num4==1){
+            resultsContainer.innerHTML = "Affectation 1 : sécurité spatiale, affectation 2 : agronome";
+        }
+
+        else if(num1==1 && num2==1 && num3==1 && num4==1){
+            resultsContainer.innerHTML = "Affectation 1 : navigateur, affectation 2 : explorateur de terrain";
+        }
+
+        else if(num1==2 && num2==2 && num3==0 && num4==0){
+            resultsContainer.innerHTML = "Affectation 1 : explorateur de terrain, affectation 2 : navigateur";
+        }
+        else if(num1==2 && num2==0 && num3==2 && num4==0){
+            resultsContainer.innerHTML = "Affectation 1 : médecin, affectation 2 : agronome";
+        }
+        else if(num1==2 && num2==0 && num3==0 && num4==2){
+            resultsContainer.innerHTML = "Affectation 1 : agronome, affectation 2 : navigateur";
+        }
+        else if(num1==0 && num2==2 && num3==0 && num4==2){
+            resultsContainer.innerHTML = "Affectation 1 : explorateur de terrain, affectation 2 : maintenance spatiale";
+        }
+        else if(num1==0 && num2==2 && num3==2 && num4==0){
+            resultsContainer.innerHTML = "Affectation 1 : médecin, affectation 2 : maintenance spatiale";
+        }
+        else if(num1==0 && num2==0 && num3==2 && num4==2){
+            resultsContainer.innerHTML = "Affectation 1 : sécurité spatiale, affectation 2 : agronome";
+        }
+
+        
+        else if(num1==2 && num2==1 && num3==1 && num4==0){
+            resultsContainer.innerHTML = "Affectation 1 : navigateur, affectation 2 : sécurité spaciale";
+        }
+        else if(num1==2 && num2==1 && num3==0 && num4==1){
+            resultsContainer.innerHTML = "Affectation 1 : agronome, affectation 2 : navigateur";
+        }
+        else if(num1==2 && num2==0 && num3==1 && num4==1){
+            resultsContainer.innerHTML = "Affectation 1 : navigateur, affectation 2 : médecin";
+        }
+
+        else if(num1==1 && num2==2 && num3==0 && num4==1){
+            resultsContainer.innerHTML = "Affectation 1 : explorateur de terrain, affectation 2 : agronome";
+        }
+        else if(num1==1 && num2==2 && num3==1 && num4==0){
+            resultsContainer.innerHTML = "Affectation 1 : maintenance spatiale, affectation 2 : médecin";
+        }
+        else if(num1==0 && num2==2 && num3==1 && num4==1){
+            resultsContainer.innerHTML = "Affectation 1 : explorateur de terrain, affectation 2 : sécurité spaciale";
+        }
+
+        else{
+            resultsContainer.innerHTML = "pas d'affectation";
+
+        }
+    }
+
+    const quizContainer = document.getElementById('quiz');
+    const resultsContainer = document.getElementById('results');
+    const submitButton = document.getElementById('submit');
+
+    
+
+    const myQuestions = [
+    {
+        question: "Quel rôle vous corespond-t-il le mieux ?",
+        answers: {
+        a: "leader",
+        b: "manuel",
+        c: "aide",
+        d: "chercheur"
+        },
+        answer1:"a",
+        answer2:"b",
+        answer3:"c",
+        answer4:"d"
+        //correctAnswer: "c"
+    },
+    {
+        question: "Qu'est ce qui vous interesse le plus ?",
+        answers: {
+        a: "être au contact de la nature",
+        b: "résoudre des problème",
+        c: "être au contact des gens",
+        d: "sortir de la routine"
+        },
+        answer1:"b",
+        answer2:"a",
+        answer3:"c",
+        answer4:"d"
+    },
+    {
+        question: "Qui était votre idole enfant ?",
+        answers: {
+        a: "Marie Curie",
+        b: "Mohammed Ali",
+        c: "Stanley Kubric",
+        d: "Neil Armstrong"
+        },
+        answer1:"a",
+        answer2:"d",
+        answer3:"b",
+        answer4:"c"
+    },
+
+    {
+        question: "Que feriez-vous sur Gorosa ?",
+        answers: {
+        a: "Construire une famille",
+        b: "s'engager dans la conservation des savoirs humains",
+        c: "construir les infrastructures du future",
+        d: "découvrir la planète"
+        },
+        answer1:"d",
+        answer2:"c",
+        answer3:"a",
+        answer4:"b"
+    },
+    
+    ];
+
+    // display quiz right away
+    buildQuiz();
+
+    // on submit, show results
+    submitButton.addEventListener('click', showResults);
+
+</script>
+</html>
